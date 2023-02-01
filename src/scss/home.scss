@@ -30,9 +30,9 @@
 
 .navigation {
 
-    // .navigation__container
+    // .navigation__main-block
 
-    &__container {
+    &__main-block {
         @include adaptiveValue("padding-left", 40, 15);
         @include adaptiveValue("padding-right", 40, 15);
         @include adaptiveValue("padding-top", 46, 36);
@@ -365,9 +365,9 @@
 
 .content {
 
-    // .content__container
+    // .content__main-block
 
-    &__container {}
+    &__main-block {}
 }
 
 .hero {
