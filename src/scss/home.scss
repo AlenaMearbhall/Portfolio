@@ -373,6 +373,7 @@
 .hero {
     background-color: #fff;
     height: 100%;
+    position: relative;
     @include adaptiveValue("padding-top", 90, 25);
     @include adaptiveValue("padding-left", 60, 30);
     @include adaptiveValue("padding-right", 33, 25);
@@ -433,37 +434,37 @@
     
             &_1 {
                 top: percent(5, 110);
-                left: 690px;
+                left: percent(37, 530);
             }
     
             &_2 {
-                top: percent(10, 160);
-                left: percent(957, 1510);
+                top: percent(10, 110);
+                left: percent(757, 1510);
             }
     
             &_3 {
-                top: percent(16, 240);
-                left: percent(957, 1170);
+                top: percent(16, 110);
+                left: percent(1057, 1170);
             }
     
             &_4 {
-                top: percent(40, 100);
-                left: percent(649, 1620);
+                top: percent(90, 100);
+                left: percent(149, 1620);
             }
     
             &_5 {
-                top: percent(38, 110);
-                left: percent(925, 1620);
+                top: percent(92, 110);
+                left: percent(625, 1620);
             }
     
             &_6 {
-                top: percent(30, 100);
-                left: percent(1221, 1620);
+                top: percent(70, 100);
+                left: percent(1121, 1620);
             }
     
             &_7 {
-                top: percent(40, 100);
-                right: rem(250);
+                top: percent(90, 100);
+                right: percent(25, 550);
             }
         }
 }
