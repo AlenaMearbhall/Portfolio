@@ -104,14 +104,20 @@
             text-align: center;
     }
         &__link {
-            color: $accentFonColor;
-            font-size: rem(24);
+            fill: $accentFonColor;
                 @media (any-hover: hover) {
                         &:hover {
                             color: #fff;
                         }
                     }
+
+        svg {
+            width: 24px;
+            height: 24px;
         }
+        }
+
+
 
 }
 
@@ -360,6 +366,12 @@
     &__icon {
         color: $accentFonColor;
         @include adaptiveValue("font-size", 20, 14);
+    }
+
+    svg {
+        fill: $accentFonColor;
+        width: 20px;
+        height: 20px;
     }
 }
 
