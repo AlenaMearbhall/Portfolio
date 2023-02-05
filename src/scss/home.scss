@@ -113,9 +113,10 @@
     }
         &__link {
             fill: $accentFonColor;
+            transition: background-color 0.3s ease 0s;
                 @media (any-hover: hover) {
                         &:hover {
-                            color: #fff;
+                            fill: #fff;
                         }
                     }
 
