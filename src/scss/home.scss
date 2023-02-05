@@ -4,6 +4,10 @@
     &__container {
         display: flex;
         @include adaptiveValue("gap", 84, 20);
+        
+        @media (max-width: em(516)) {
+                flex-direction: column;
+            }
     }
     
 }
@@ -20,6 +24,10 @@
         background-color: #fff;
         width: 35%;
         height: 100%;
+
+        @media (max-width: em(516)) {
+                width: auto;
+            }
         
     }
 
@@ -163,11 +171,20 @@
         background-color: $accentColor;
         padding-left: rem(5);
         padding-right: 10%;
+        @include adaptiveValue("font-size", 15, 10);
+                @media (max-width: em(516)) {
+                        font-size: rem(15);
+                    }
     }
 
     // .item-about__text
 
-    &__text {}
+    &__text {
+        @include adaptiveValue("font-size", 15, 10);
+                @media (max-width: em(516)) {
+                        font-size: rem(15);
+                    }
+    }
 
     &__text-green {
         color: #7EB942;
@@ -208,6 +225,9 @@
         @include adaptiveValue("font-size", 18, 12);
         line-height: 123.6%;
         color: $accentFonColor;
+                        @media (max-width: em(516)) {
+                                font-size: rem(18);
+                            }
     }
 
     // .item-languages__text
@@ -215,6 +235,10 @@
     &__text {
         font-weight: 400;
         line-height: 160%;
+        @include adaptiveValue("font-size", 15, 10);
+        @media (max-width: em(516)) {
+                font-size: rem(15);
+            }
     }
 }
 
@@ -251,13 +275,20 @@
         @include adaptiveValue("font-size", 18, 12);
             line-height: 123.6%;
             color: $accentFonColor;
+                @media (max-width: em(516)) {
+                        font-size: rem(18);
+                    }
     }
 
     // .item-skills__text
 
     &__text {
         font-weight: 400;
+        @include adaptiveValue("font-size", 15, 10);
             line-height: 160%;
+                @media (max-width: em(516)) {
+                        font-size: rem(15);
+                    }
     }
 }
 
@@ -294,6 +325,9 @@
         @include adaptiveValue("font-size", 18, 12);
             line-height: 123.6%;
             color: $accentFonColor;
+                @media (max-width: em(516)) {
+                        font-size: rem(18);
+                    }
     }
 
     // .item-subskills__text
@@ -301,6 +335,10 @@
     &__text {
         font-weight: 400;
         line-height: 160%;
+        @include adaptiveValue("font-size", 15, 10);
+                @media (max-width: em(516)) {
+                        font-size: rem(15);
+                    }
 
         &::before {
         font-size: rem(12);
@@ -351,7 +389,7 @@
 
     &__title {
         font-weight: 500;
-        @include adaptiveValue("font-size", 18, 12);
+        
         line-height: 123.6%;
         color: $accentFonColor;
     }
@@ -360,7 +398,11 @@
 
     &__text {
         font-weight: 400;
+        @include adaptiveValue("font-size", 15, 8);
         line-height: 160%;
+        @media (max-width: em(516)) {
+                font-size: rem(15);
+            }
     }
 
     &__icon {
@@ -567,43 +609,3 @@
 }
 
 //====================================================================================================
-// .item-portfolio__hover {
-//     position: absolute;
-//     width: 100%;
-//     height: 100%;
-//     top: 0;
-//     left: 0;
-//     background: rgba(33, 150, 243, 0.9);
-//     padding: 0 rem(24);
-//     display: flex;
-//     align-items: center;
-//     opacity: 0;
-//     transition: all 0.3s ease 0s;
-
-//     & p {
-//         font-weight: 400;
-//         line-height: math.div(28, 18);
-//         letter-spacing: 0.03em;
-//         color: #ffffff;
-//         font-size: rem(18);
-
-//         @media (min-width:$tablet) {
-//             font-size: rem(14);
-//         }
-
-//         @media (min-width:$pc) {
-//             font-size: rem(18);
-//         }
-//     }
-// }
-
-// .item-portfolio {
-
-//     @media (any-hover: hover) {
-//         &:hover {
-//             & .item-portfolio__hover {
-//                 opacity: 1;
-//             }
-//         }
-//     }
-// }
